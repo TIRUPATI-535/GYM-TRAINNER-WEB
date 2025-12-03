@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Trainer</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="running-bar">
+        <p>Latest Update: New workout programs added! Check out the new training plans to boost your performance!</p>
+    </div>
+
+    <header>
+        <div class="navbar">
+            <h1>Gym Trainner web</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="Updated_Login/index.html">Sign-Up</a>
+                </li>
+                <li>
+                    <a href="Updated_Login/login.html">Login</a>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+
+                <li class="submenu">
+                    <a href="">Services</a>
+
+
+                    <ul class="submenu-list">
+                        <li>
+                            <a href="diet_plan.html">Diet Plans</a>
+                            <ul class="submenu-list right-submenu">
+                                <li><a href="https://www.muscleandstrength.com/diet-plans/clean-eating-diet">Clean Diet</a></li>
+                                <li><a href="diet pdf.pdf">Diet Plan PDF</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="nutritionplan pdf.pdf">Nutrition</a></li>
+                        <li><a href="workout_tracking.html">Workout Tracking Videos</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+    <section class="intro ">
+        <h2>Free Workout Plans</h2>
+        <p>We built a platform that provides free workouts, tools and information .</p>
+        <p>Find out how we can help you reach your fitness goals.</p>
+
+
+        <ul class="body ">
+            <div class="background-image ">
+                <img src="fitness logo1.jpeg " width="0 " height="0 ">
+            </div>
+
+            <div class="horizontal-bar ">
+                <p>Welcome to My Workout session</p>
+
+                <div class="container1 ">
+                    <div class="box ">
+                        <!-- Chest Workouts Dropdown -->
+                        <div class="dropdown-group">
+                            <label for="chest-workouts">Chest Workouts:</label>
+                            <select id="chest-workouts" onchange="redirectToPage(this)">
+                                        <option value="">-- Select a Chest Workout --</option>
+                                        <option value="bench_press.html">Bench Press</option>
+                                        <option value="incline_dumbbell_press.html">Incline Dumbbell Press</option>
+                                        <option value="chest_fly.html">Chest Fly</option>
+                                        <option value="push_ups.html">Push-Ups</option>
+                                    </select>
+                        </div>
+
+                        <script>
+                            // Function to redirect to the selected page
+                            function redirectToPage(selectElement) {
+                                const selectedPage = selectElement.value;
+
+                                if (selectedPage) {
+                                    window.location.href = selectedPage; // Redirect to the selected page
+                                }
+                            }
+                        </script>
+
+                    </div>
+
+                    <div class="box ">
+                        <!-- Nutrition Plans Dropdown -->
+                        <div class="dropdown-group">
+                            <label for="nutrition-plans">Nutrition Plans:</label>
+                            <select id="nutrition-plans" onchange="redirectToPage(this)">
+                            <option value="">-- Select a Nutrition Plan --</option>
+                            <option value="clean_eating.html">Clean Eating</option>
+                            <option value="vegetarian.html">Vegetarian</option>
+                        </select>
+                        </div>
+                    </div>
+
+                    <div class="box ">
+                        <!-- Workout Tracking Dropdown -->
+                        <div class="dropdown-group">
+                            <label for="workout-tracking">Workout Tracking:</label>
+                            <select id="workout-tracking" onchange="redirectToPage(this)">
+                                <option value="">-- Select a Workout Tracking Option --</option>
+                                
+                                <option value="progress_tracker.html">Progress Tracker</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="content">
+                </div>
+                <hr>
+                <div class="large-line"></div>
+
+
+                <div class="container2 ">
+                    <div class="box1 ">
+                        <img src="dumbbell.jpg ">
+                        <a href="https://youtu.be/-lcbvOddoi8">Dumbbell Lateral Raise</a>
+                    </div>
+
+                    <div class="box1 ">
+                        <img src="dumbbell1.jpg ">
+                        <a href="https://youtu.be/DhewkuU_95s">bent over Dumbbell row</a>
+                    </div>
+
+                    <div class="box1 ">
+                        <img src="dumbbell2.webp">
+                        <a href="https://youtu.be/YZgVEy6cmaY">onr Arm Dumbbell row</a>
+                    </div>
+                </div>
+
+
+                <div class="container3 ">
+                    <div class="box1 ">
+                        <img src="dumbbell3.jpg ">
+                        <a href="https://youtu.be/dGqI0Z5ul4k">Dumbbell Bench Press</a>
+                    </div>
+
+                    <div class="box1 ">
+                        <img src="dumbbell4.jpg ">
+                        <a href="https://youtu.be/8nNi8jbbUPE">Incline Dumbbell Bench Press</a>
+                    </div>
+
+                    <div class="box1 ">
+                        <img src="dumbbell5.jpg ">
+                        <a href="https://youtu.be/j7ULT6dznNc">Overhead Press</a>
+                    </div>
+                </div>
+
+                <div class="container4 ">
+                    <div class="box1 ">
+                        <img src="dumbbell6.jpg ">
+                        <a href="https://youtu.be/paCfxhgW6bI">Bent Over Row</a>>
+                    </div>
+
+                    <div class="box1 ">
+                        <img src="dumbbell7.jpg ">
+                        <a href="https://youtu.be/Fgz_FdzDukE">Bent Over Dumbbell</a>
+                    </div>
+
+                    <div class="box1 ">
+                        <img src="dumbbell-fly8.jpg">
+                        <a href="https://youtu.be/-lcbvOddoi8">Dumbbell Fly</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+    </section>
+    <script src="script.js "></script>
+    <!-- Link to JavaScript -->
+</body>
+
+</html>
