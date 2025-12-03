@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Tracker</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.8;
+        }
+        
+        h1,
+        h2,
+        h3 {
+            color: #2c3e50;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-top: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            color: #3498db;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+        
+        ol,
+        ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        .highlight {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        
+        .note {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        
+        .tracker-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .tracker-table th,
+        .tracker-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .tracker-table th {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        .tracker-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .tracker-table tr:hover {
+            background-color: #f1f1f1;
+        }
+        
+        .list-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .list {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        .list h3 {
+            font-size: 1.5rem;
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .list ul li {
+            margin-bottom: 10px;
+        }
+        
+        .list ul li a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-size: 1.1rem;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .list ul li a:hover {
+            background-color: #ecf0f1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Progress Tracker</h1>
+    <div class="container">
+        <img src="progress_tracker.jpg" alt="Progress Tracker">
+
+        <h2>Introduction</h2>
+        <p>Tracking your progress is essential for achieving your fitness or health goals. Whether you're working on weight loss, muscle gain, or improving endurance, a progress tracker helps you stay accountable and motivated. This guide provides daily,
+            weekly, and monthly tracking options to help you stay on top of your goals.</p>
+
+        <h2>Daily Progress Tracker</h2>
+        <div class="highlight">
+            <table class="tracker-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Weight (lbs)</th>
+                        <th>Workout</th>
+                        <th>Calories Consumed</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10/01/2023</td>
+                        <td>160</td>
+                        <td>Bench Press: 3x10 @ 135 lbs</td>
+                        <td>1800</td>
+                        <td>Felt strong during workout.</td>
+                    </tr>
+                    <tr>
+                        <td>10/02/2023</td>
+                        <td>159</td>
+                        <td>Running: 3 miles</td>
+                        <td>1700</td>
+                        <td>Improved endurance.</td>
+                    </tr>
+                    <tr>
+                        <td>10/03/2023</td>
+                        <td>158</td>
+                        <td>Squats: 3x10 @ 185 lbs</td>
+                        <td>1750</td>
+                        <td>Legs felt sore but strong.</td>
+                    </tr>
+                    <tr>
+                        <td>10/04/2023</td>
+                        <td>157</td>
+                        <td>Rest Day</td>
+                        <td>1600</td>
+                        <td>Recovering well.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Weekly Progress Tracker</h2>
+        <div class="highlight">
+            <table class="tracker-table">
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th>Total Weight Loss (lbs)</th>
+                        <th>Total Workouts</th>
+                        <th>Average Calories/Day</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Week 1</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>1750</td>
+                        <td>Consistent with workouts and diet.</td>
+                    </tr>
+                    <tr>
+                        <td>Week 2</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>1800</td>
+                        <td>Missed one workout due to travel.</td>
+                    </tr>
+                    <tr>
+                        <td>Week 3</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>1700</td>
+                        <td>Increased workout intensity.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Monthly Progress Tracker</h2>
+        <div class="highlight">
+            <table class="tracker-table">
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Total Weight Loss (lbs)</th>
+                        <th>Total Workouts</th>
+                        <th>Average Calories/Day</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>September</td>
+                        <td>8</td>
+                        <td>20</td>
+                        <td>1750</td>
+                        <td>Consistent progress, feeling great.</td>
+                    </tr>
+                    <tr>
+                        <td>October</td>
+                        <td>6</td>
+                        <td>18</td>
+                        <td>1800</td>
+                        <td>Slower progress due to holidays.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Tips for Staying Motivated</h2>
+        <ul>
+            <li><strong>Set Small Goals:</strong> Break down larger goals into smaller, achievable steps.</li>
+            <li><strong>Visualize Progress:</strong> Use charts or graphs to visualize your progress.</li>
+            <li><strong>Stay Consistent:</strong> Consistency is key to long-term success.</li>
+            <li><strong>Find a Buddy:</strong> Partner with a friend for accountability.</li>
+            <li><strong>Reward Yourself:</strong> Celebrate milestones with non-food rewards.</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>A progress tracker is a powerful tool for achieving your fitness and health goals. By tracking your daily, weekly, and monthly progress, you can stay motivated and make steady progress toward your objectives.</p>
+    </div>
+</body>
+
+</html>

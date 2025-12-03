@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Plan - Videos</title>
+
+</head>
+
+<body>
+
+    <div class="container1">
+        <h2>Workout Plan - Videos</h2>
+        <video width="640" height="360" controls>
+      <source src="gym video3.mp4" type="video/mp4">
+  </video>
+
+        <video width="640" height="360" controls>
+      <source src="gym video4.mp4" type="video/mp4">
+  </video>
+
+        <video width="640" height="360" controls>
+      <source src="gym video2.mp4" type="video/mp4">
+  </video>
+
+
+
+        <video width="640" height="360" controls>
+      <source src="gym video1.mp4" type="video/mp4">
+  </video>
+
+        <video width="640" height="360" controls>
+    <source src="gym video5.mp4" type="video/mp4">
+</video>
+
+        <video width="640" height="360" controls>
+    <source src="gym video6.mp4" type="video/mp4">
+</video>
+
+        <video width="640" height="360" controls>
+    <source src="gym video7.mp4" type="video/mp4">
+</video>
+
+        <video width="640" height="360" controls>
+    <source src="gym video8.mp4" type="video/mp4">
+</video>
+
+    </div>
+
+    <div id="video-gallery"></div>
+
+    <script>
+        const videoFiles = []; // List of videos
+        const gallery = document.getElementById("video-gallery");
+
+        videoFiles.forEach(file => {
+            let videoElement = document.createElement("video");
+            videoElement.src = "videos/" + file;
+            videoElement.width = 640;
+            videoElement.height = 360;
+            videoElement.controls = true;
+            gallery.appendChild(videoElement);
+        });
+    </script>
+</body>
+
+</html>

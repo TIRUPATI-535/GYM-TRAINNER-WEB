@@ -1,0 +1,408 @@
+/* General styles for body */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 60%;
+    /*move image to upper and lower */
+    color: #000000;
+    font-family: Arial, sans-serif;
+    background-image: url('fitness\ logo1.jpeg');
+    /* Replace with your image URL */
+    background-size: cover;
+    /* Make the image cover the whole screen */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Prevent image repetition */
+    background-attachment: fixed;
+    /* keep the fix position of the image*/
+}
+
+header {
+    display: flex;
+    /*position of the menu left and right*/
+    font-display: arial;
+    justify-content: space-between;
+    /*move the menu left and right and center*/
+    align-items: center;
+    /* align the menu top and baseline and center*/
+    /* heading color(guide for gym trainner)*/
+    padding: 20px;
+    /*for headersize*/
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+nav ul {
+    list-style-type: none;
+    /* for style type of the menu*/
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    /*set menu verticaly and horizantaly*/
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav ul li {
+    position: relative;
+    /* used for position relative or absolute*/
+    margin-right: 10px;
+    /*move right and left margin*/
+    padding-left: 50px;
+    /*set distance in menu*/
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    /*set color to the menu*/
+    text-decoration: none;
+    /*used for decoration menu (dashed line)*/
+    padding: 10px 15px;
+    /*set distance in menu*/
+    display: block;
+    /*To submenu seperate and adopt*/
+}
+
+nav ul li a:hover {
+    background-color: #ff0000;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu-list {
+    display: none;
+    /*not show submenulist bydefault*/
+    position: absolute;
+    top: 100%;
+    /*set submenu position top or bottum*/
+    left: 7%;
+    /*set submenu from left side to right side border */
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    list-style-type: none;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.submenu:hover .submenu-list {
+    display: block;
+    /*not show submenulist bydefault ,because it block*/
+}
+
+
+/* Show submenu only when hovering over "Diet Plans" */
+
+.submenu>li>a:hover+.submenu-list,
+.submenu>li>.submenu-list:hover {
+    display: none;
+}
+
+.submenu-list li a {
+    padding: 20px;
+    /*distance in submenu*/
+}
+
+.submenu-list li a:hover {
+    background-color: #ff0000;
+}
+
+.right-submenu {
+    left: -100%;
+    /* Move the submenu to the left */
+    top: 0;
+    /* Align it with the parent item */
+    margin-left: -5px;
+    /* Add a small gap for better visibility */
+}
+
+
+/* Main content styles */
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #000000;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 80px;
+}
+
+section p {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Service Pages */
+
+.service {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.service h2 {
+    color: #444;
+    font-size: 28px;
+}
+
+.service p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+
+/* running bar of the website */
+
+.running-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #001aff;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    overflow: hidden;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.running-bar p {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    animation: scroll 10s linear infinite;
+}
+
+
+/* Scroll animation */
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.horizontal-bar {
+    position: absolute;
+    left: 0;
+    top: 490px;
+    width: 100%;
+    height: 2000px;
+    background: #81b4c7;
+    padding: 10px 0;
+    z-index: -1;
+}
+
+
+/* styles.css */
+
+.container1 {
+    bottom: 510px;
+    right: 80px;
+    display: flex;
+    justify-content: center;
+    /* Centers the boxes */
+    align-items: flex-start;
+    /* Aligns at the top */
+    gap: 50px;
+    /* Space between boxes */
+    max-width: 1200px;
+    /* Restrict width */
+    margin: 0 auto;
+    /* Center the container */
+    padding: 50px 20px;
+    /* Space from top */
+}
+
+.box {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    border: 1px solid #200cce;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 410px;
+    height: 300px;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.box h2 {
+    font-size: 1.5rem;
+    color: #020480;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.container2 {
+    bottom: 510px;
+    right: 80px;
+    display: flex;
+    justify-content: center;
+    /* Centers the boxes */
+    align-items: flex-start;
+    /* Aligns at the top */
+    gap: 50px;
+    /* Space between boxes */
+    max-width: 1200px;
+    /* Restrict width */
+    margin: 0 auto;
+    /* Center the container */
+    padding: 50px 20px;
+    /* Space from top */
+}
+
+.container3 {
+    bottom: 510px;
+    right: 80px;
+    display: flex;
+    justify-content: center;
+    /* Centers the boxes */
+    align-items: flex-start;
+    /* Aligns at the top */
+    gap: 50px;
+    /* Space between boxes */
+    max-width: 1200px;
+    /* Restrict width */
+    margin: 0 auto;
+    /* Center the container */
+    padding: 50px 20px;
+    /* Space from top */
+}
+
+.container4 {
+    bottom: 510px;
+    right: 80px;
+    display: flex;
+    justify-content: center;
+    /* Centers the boxes */
+    align-items: flex-start;
+    /* Aligns at the top */
+    gap: 50px;
+    /* Space between boxes */
+    max-width: 1200px;
+    /* Restrict width */
+    margin: 0 auto;
+    /* Center the container */
+    padding: 50px 20px;
+    /* Space from top */
+}
+
+.box1 {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    border-radius: 10px;
+    width: 410px;
+    height: 300px;
+    overflow: hidden;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box1 img {
+    max-width: 100%;
+    /* Ensure image does not exceed box width */
+    max-height: 100%;
+    /* Ensure image does not exceed box height */
+    object-fit: contain;
+    /* Ensures the image fits within the box */
+}
+
+.box1 a {
+    color: #000000;
+}
+
+
+/*for horizantal line*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.large-line {
+    border: none;
+    height: 10px;
+    /* Increase height for a larger line */
+    background-color: #007BFF;
+    /* Blue color */
+    width: 100%;
+    margin: 0;
+}
+
+.submenu .submenu {
+    top: 0;
+    left: 100%;
+    display: none;
+}
+
+.submenu li:hover .submenu {
+    display: block;
+}
+
+
+/* Additional data styling */
+
+.submenu .data {
+    padding: 10px;
+    color: #fff;
+}
+
+
+/* General Styles */
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.dropdown-group {
+    margin-bottom: 20px;
+}
